@@ -30,6 +30,7 @@
         <div class="page-header">
           <h1 style=" font-weight: bold;"><%= ERB::Util.h(title) %></h1>
         </div>
+        <div><%= date_create %></div>
         <div style="border-bottom: 1px solid #eee ; border-top: 1px solid #eee ;">
         <div style="font-size: large; font-weight: bold;" >Фильтры отображения:
         </div>
@@ -58,7 +59,7 @@
             </table>
             <div style="border-top: 1px solid #eee ;">
             <table>
-                <tr><th>Общее время прогона автотестов:</th><td style="text-indent: 10px;"> <%= total_time %> секунд</td></tr>
+                <tr><th>Общее время прогона автотестов:</th><td style="text-indent: 10px;"> <%= total_time %> минут</td></tr>
             </table>
           </div>
         </section>

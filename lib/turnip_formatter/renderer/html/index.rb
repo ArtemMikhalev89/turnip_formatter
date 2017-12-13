@@ -80,7 +80,13 @@ module TurnipFormatter
         end
 
         def total_time
-          @resource[:total_time].to_s
+          t_t = @resource[:total_time] / 60
+          t_t.to_s
+        end
+
+        def date_create
+          t = Time.now
+          t.strftime("%F %H:%M")
         end
 
         def turnip_version
